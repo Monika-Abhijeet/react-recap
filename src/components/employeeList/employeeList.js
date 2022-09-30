@@ -1,11 +1,12 @@
 import "./employeeList.css";
 import EmployeeCard from "../employeeCard/employeeCard";
-
+import ParentLifecycle from "../lifecycle1/ParentLifecycle";
 function EmployeeeList() {
   return (
     <div className="employeelist-wrapper">
       <h1>test</h1>
       <h1>List of Employees</h1>
+      {/* <ParentLifecycle></ParentLifecycle> */}
       <EmployeeCard
         name="Monika"
         empId="123456"
