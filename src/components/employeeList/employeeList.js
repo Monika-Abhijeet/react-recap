@@ -28,7 +28,6 @@ function EmployeeeList() {
   ];
   return (
     <div className="employeelist-wrapper">
-      <h1>test</h1>
       <h1>List of Employees</h1>
       <Form>
         <Form.Group>
