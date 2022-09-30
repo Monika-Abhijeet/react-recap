@@ -1,8 +1,8 @@
 .employeelist-wrapper {
-  background-color: bisque;
+  /* background-color: bisque; */
   width: 80vw;
   margin-left: 20vw;
-  height: 90vh;
+  min-height: 90vh;
 }
 
 .employee-card {
