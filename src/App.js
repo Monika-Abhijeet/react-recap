@@ -10,17 +10,19 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
-      <Sidebar></Sidebar>
       {/* <EmployeeeList></EmployeeeList> */}
-      <div class="app-container">
-        <BrowserRouter>
+      <BrowserRouter>
+        <Sidebar></Sidebar>
+        <div class="app-container">
           <Routes>
-            <Route path="/" element={<EmployeeeList />}></Route>
+            <Route path="/" element={<EmployeeeList></EmployeeeList>}></Route>
             <Route path="/personal" element={<PersonalDetails />}></Route>
-            <Route path="/employee" element={<EmployeeDetails />}></Route>
+            <Route path="/employee" element={<EmployeeeList />}></Route>
+            <Route path="/employee/:id" element={<EmployeeDetails />}></Route>
           </Routes>
-        </BrowserRouter>
-      </div>
+        </div>
+      </BrowserRouter>
+
       <Footer></Footer>
     </div>
   );
