@@ -1,0 +1,7 @@
+.sidebar-wrapper {
+  height: 90vh;
+  width: 20vw;
+  background-color: aqua;
+  position: fixed;
+  margin-top: 5vh;
+}
