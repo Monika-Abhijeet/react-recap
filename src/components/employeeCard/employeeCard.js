@@ -1,3 +1,5 @@
+import { Button, Alert } from "react-bootstrap";
+
 function EmployeeCard(props) {
   function sayHi() {
     alert("hi " + props.name);
@@ -15,8 +17,13 @@ function EmployeeCard(props) {
       <p>Name : {props.name}</p>
       <p>Emp id: {props.empId}</p>
       <p>Designation: {props.designation}</p>
-      <button onClick={sayHi}>Hi</button>
-      <button onClick={() => sayHello()}>Hello</button>
+      <Button variant="outline-danger" onClick={sayHi}>
+        Hi
+      </Button>
+      <Button variant="warning" onClick={() => sayHello()}>
+        Hello
+      </Button>
+      <Alert variant="danger">Hello</Alert>
       <button onClick={() => generateSquareNumber(10)}>
         GenerateSquareNumber
       </button>
